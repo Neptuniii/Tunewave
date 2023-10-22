@@ -1,0 +1,350 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #333333;
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+.header-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+}
+.search-bar{
+    display: flex;
+    width: 100%;
+}
+.search{
+    width: 100%;
+    padding: 5px 15px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: none;
+}
+.search:focus{
+    outline: none;
+}
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    position: relative;
+}
+.header-icon {
+    background-color: #333333;
+    border: none;
+
+}
+.header-icon > i {
+    color: #bbbbbb ;
+    padding: 5px 15px;
+}
+.header-icon > i:hover {
+    color: white ;
+}
+.setting, .profile, .noti {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    border: 1px solid #bbbbbb;
+    background-color: white;
+    box-shadow: 5px 5px 10px #808080;
+}
+.setting > a, .profile > a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black;
+    display: block;
+    width: 150px;
+    z-index: 1;
+}
+.noti > div{
+    width: 350px;
+    padding: 5px 20px;
+}
+.noti-header{
+    border-bottom: 1px solid #e4e4e4;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+.noti-main{
+    color: #bbbbbb;
+}
+.noti-footer{
+    border-top: 1px solid #e4e4e4;
+}
+.noti-footer > a{
+    text-decoration: none;
+    color: black;
+}
+.setting > a:hover, .profile > a:hover {
+    background-color: #bbbbbb;
+}
+.header-item:hover .setting, .header-item:hover .profile, .header-item:hover .noti{
+    display: block;
+}
+
+.main{
+    padding: 30px;
+}   
+.left-body {
+    padding: 0 20px;
+    border-right: 1px solid #ebebeb;
+}
+.mix{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.mix-title{
+    display: flex;
+    justify-content: space-between;
+}
+.mix-title > h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mix-title > a {
+    text-decoration: none;
+    color: #999999;
+}
+.mix-title > a:hover {
+    color: #3d3d3d;
+    text-decoration: underline;
+}
+
+.mix-item{
+    background-color: rgb(231, 231, 231);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 10px #808080;
+}
+.mix-item:hover{
+    background-color: rgb(216, 216, 216);
+}
+.mix-image {
+    width: 100%;
+    margin: 0 0 15px 0;
+    border-radius: 10px;
+}
+.play-button{
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    display: none;
+    
+}
+.mix-item:hover  .play-button{
+    display: block;
+}
+.mix-artist > img {
+    border-radius: 50%;
+}
+.mix-item > div > h6{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.mix-item > div > p{
+    font-size: 12px;
+    color: #999999;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.right-body {
+    padding: 0 20px;
+}
+.like-header, .history-header, .mobile-header {
+    display: flex;
+    justify-content: space-between;
+}
+.like-header > p, .history-header > p, .mobile-header > p {
+    padding: 5px;
+    color: #999999;
+}
+.like-header > a, .history-header > a {
+    padding: 5px;
+    text-decoration: none;
+    color: #999999;
+}
+.like-header > a:hover, .history-header > a:hover {
+    color: #3d3d3d;
+    text-decoration: underline;
+}
+.list-like > ul, .list-history > ul {
+    list-style-type: none;
+    padding: 0;
+}
+.all-img {
+    position: relative;
+}
+.like-play, .history-play{
+    position: absolute;
+    display: none;
+    top: 20%;
+    left: 20%;
+}
+.list-item:hover .like-play, .list-item:hover .history-play {
+    display: block;
+}
+.like-img, .history-img {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 5px 0;
+}
+.list-item {
+    display: flex;
+}
+.content {
+    font-size: 10px;
+
+}
+.artist > a, .name > a, .stat > li > a, .play {
+    text-decoration: none;
+    color: #999999;
+}
+.stat {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+.stat > li {
+    padding-right: 15px;
+}
+.list-mobile {
+    display: flex;
+    justify-content: center;
+}
+.mobile-item {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 10px;
+}
+.mobile-item:hover {
+    background-color: #333333;
+    color: #bbbbbb;
+}
+.app {
+    font-size: 20px;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    background-color: #333333;
+}
+.playbar{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+#prev, #play, #next {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #333333;
+    color: white;
+}
+#prev:hover, #play:hover, #next:hover {
+    background: #525252;
+}
+#prev > i, #play > i, #next > i {
+    font-size: 24px;
+    padding: 10px;
+}
+footer{
+    background-color:#333333 ;
+}
+.footer{
+    padding-top: 50px;
+}
+details{
+    color: #bbbbbb;
+}
+summary{
+    font-size: 20px;
+    font-weight: bold;
+}
+.social-icons{
+    list-style-type: none;
+    width: 25%;
+}
+.social-icons > li {
+    margin-right: 10px;
+    padding: 10px;
+
+}
+.social-icons > li:hover {
+    background: #525252;
+    border-radius: 10px;
+}
+.footer-title{
+    color:#bbbbbb;
+    padding: 0 32px 0;
+}
+.footer-list{
+    list-style-type: none;
+}
+.footer-item{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.footer-item:hover{
+    background: #525252;
+}
+
+
+@media (max-width: 768px) {
+    .right-body{
+        display: none;
+    }
+    .mix-item:hover .play-button{
+        display: none;
+    }
+    .mix-item > div > p{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+}
+@media (max-width: 768px) {
+    .setting, .profile, .noti {
+        top: -6.5px;
+    }
+}
